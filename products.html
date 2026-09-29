@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="bakery-logo_c.png" alt="North Star Bakery logo with a loaf of bread and a wheat stalk" class="logo">
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" aria-current="page" class="current">Our Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact and Pre-Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Products</h1>
+    <p class="intro-text">Here's what you'll find on our shelves. We don't sell online, but you can save anything for pickup using our <a href="contact.html">pre-order form</a>.</p>
+
+    <section id="order-builder">
+      <h2>Build Your Pre-Order List</h2>
+      <p>Click "Add" on anything you'd like to pick up. Your list is saved, so it will still be here if you leave and come back.</p>
+      <ul id="menu-list" class="menu-list"></ul>
+
+      <h3>Your List</h3>
+      <ul id="order-list" class="order-list"></ul>
+      <p id="order-total" class="order-total">Total: &pound;0.00</p>
+      <p class="order-buttons">
+        <button type="button" id="clear-list" class="button-secondary">Clear List</button>
+        <a href="contact.html" class="button-link">Send This List on the Pre-Order Form</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Breads</h2>
+      <img src="bakery-bread_c.png" alt="Rustic sourdough and whole wheat loaves stacked in a glass bakery case">
+      <p>All our bread is baked early each morning.</p>
+      <ul>
+        <li><strong>Scottish Plain Loaf</strong>: soft white bread with a dark crust on top</li>
+        <li><strong>Sourdough</strong>: chewy with a slightly sour taste</li>
+        <li><strong>Wholemeal Loaf</strong>: good for toast and sandwiches</li>
+        <li><strong>Morning Rolls</strong>: sold in bags of six</li>
+      </ul>
+      <p>Prices: &pound;1.80 to &pound;4.50</p>
+
+      <figure>
+        <img src="bakery-signature-loaf_c.png" alt="Dark, flour-dusted round loaf resting on a checkered kitchen towel">
+        <figcaption>Our Signature Loaf, a dark rye made from our founder's family recipe. We only bake it on Fridays and Saturdays.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Pastries and Treats</h2>
+      <p>Good with a cup of tea or coffee.</p>
+      <ul>
+        <li><strong>Cruffins</strong>: our croissant and muffin pastry, with a new filling each month</li>
+        <li><strong>Butter Croissants</strong>: plain or chocolate</li>
+        <li><strong>Scones</strong>: plain, fruit, or cheese</li>
+        <li><strong>Shortbread</strong>: made with Scottish butter</li>
+        <li><strong>Cookies</strong>: lots of flavors, sold by the dozen</li>
+      </ul>
+      <p>Prices: &pound;1.50 to &pound;3.50 each, or &pound;18 for a dozen cookies</p>
+    </section>
+
+    <section>
+      <h2>Cakes</h2>
+      <p>We make cakes for birthdays, weddings, and other events. Please order at least 5 days ahead.</p>
+      <ul>
+        <li><strong>Everyday Cakes</strong>: chocolate, Victoria sponge, carrot, and lemon</li>
+        <li><strong>Dundee Cake</strong>: a traditional Scottish fruit cake</li>
+        <li><strong>Custom Cakes</strong>: you pick the flavor and decorations</li>
+      </ul>
+      <p>Prices: &pound;20 to &pound;120, depending on size and design</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery, St Amelia. Baking since 2007.</p>
+    <p>Phone: <a href="tel:+441334960142">01334 960142</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

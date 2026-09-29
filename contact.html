@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Contact and Pre-Orders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="bakery-logo_c.png" alt="North Star Bakery logo with a loaf of bread and a wheat stalk" class="logo">
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" aria-current="page" class="current">Contact and Pre-Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us and Pre-Order</h1>
+    <p class="intro-text">Want to save something for pickup, order a cake, or just ask a question? Fill out the form and we'll get back to you.</p>
+
+    <div class="columns">
+    <section class="form-section">
+      <h2>Pre-Order and Question Form</h2>
+      <p>Fields with a * are required.</p>
+      <form action="#" method="post" id="order-form" novalidate>
+        <fieldset>
+          <legend>Your Contact Information</legend>
+          <p>
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+            <span class="error" id="name-error"></span>
+          </p>
+          <p>
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+            <span class="error" id="email-error"></span>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Request</legend>
+          <p>
+            <label for="request-type">Request Type *</label>
+            <select id="request-type" name="request-type" required>
+              <option value="">Choose one</option>
+              <option value="pre-order">Pre-order</option>
+              <option value="custom-cake">Custom cake</option>
+              <option value="catering">Catering for an event</option>
+              <option value="question">General question</option>
+            </select>
+            <span class="error" id="request-type-error"></span>
+          </p>
+          <p>
+            <label for="pickup-date">Pickup Date *</label>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+            <span class="error" id="pickup-date-error"></span>
+          </p>
+          <p>
+            <label for="item-details">Item Details *</label>
+            <span id="list-note" class="list-note"></span>
+            <textarea id="item-details" name="item-details" rows="5" cols="40" required minlength="10" maxlength="500" placeholder="Example: 2 Signature Loaves and a dozen cookie mix"></textarea>
+            <span class="error" id="item-details-error"></span>
+          </p>
+          <p>
+            <label for="allergy-notes">Allergy Notes (optional)</label>
+            <textarea id="allergy-notes" name="allergy-notes" rows="3" cols="40" maxlength="300" placeholder="Let us know about any food allergies"></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Send My Request</button>
+        </p>
+        <p id="form-message" class="form-message"></p>
+      </form>
+    </section>
+
+    <div class="info">
+    <section>
+      <h2>Location</h2>
+      <address>
+        North Star Bakery<br>
+        14 Harbour Lane<br>
+        St Amelia<br>
+        KY12 4NS<br>
+        Scotland<br>
+        Phone: <a href="tel:+441334960142">01334 960142</a><br>
+        Email: <a href="mailto:hello@northstarbakery.example">hello@northstarbakery.example</a>
+      </address>
+      <p>We're on Harbour Lane, just up from the harbour.</p>
+    </section>
+
+    <section>
+      <h2>Opening Hours</h2>
+      <ul>
+        <li>Monday: 9:30 AM to 6:00 PM</li>
+        <li>Tuesday: 9:30 AM to 6:00 PM</li>
+        <li>Wednesday: Closed</li>
+        <li>Thursday: 9:30 AM to 6:00 PM</li>
+        <li>Friday: 9:30 AM to 6:00 PM</li>
+        <li>Saturday: 9:00 AM to 5:00 PM</li>
+        <li>Sunday: 10:00 AM to 3:00 PM</li>
+      </ul>
+      <p>Please order at least 2 days ahead for pre-orders and 5 days ahead for cakes.</p>
+    </section>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery, St Amelia. Baking since 2007.</p>
+    <p>Phone: <a href="tel:+441334960142">01334 960142</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
